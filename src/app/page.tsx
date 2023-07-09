@@ -35,9 +35,9 @@ export default function Home() {
             <main className={styles.main}>
                 <h1>Main page</h1>
                 <Link href={"/newPage"}>New Page</Link>
-                <input type="text" value={dataInput} onChange={(e) => setInput(e.target.value)} />
+                {/* <input type="text" value={dataInput} onChange={(e) => setInput(e.target.value)} />
                 <button onClick={() => getData()}>Получить данные</button>
-                <button onClick={() => writeData()}>Записать данные</button>
+                <button onClick={() => writeData()}>Записать данные</button> */}
             </main>
         </>
     );

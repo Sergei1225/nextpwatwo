@@ -1,4 +1,4 @@
-"use client";
+//"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -6,26 +6,26 @@ import Head from "next/head";
 import { useState } from "react";
 
 export default function Home() {
-    const [dataInput, setInput] = useState<string>();
+    // const [dataInput, setInput] = useState<string>();
 
-    const getData = () => {
-        const data = localStorage.getItem("test");
-        if (!data) {
-            alert("Нет данных");
-        } else {
-            alert(data);
-        }
-    };
+    // const getData = () => {
+    //     const data = localStorage.getItem("test");
+    //     if (!data) {
+    //         alert("Нет данных");
+    //     } else {
+    //         alert(data);
+    //     }
+    // };
 
-    const writeData = () => {
-        if (dataInput) {
-            localStorage.setItem("test", dataInput);
-            alert("Данные записаны");
-            setInput('')
-        } else {
-            alert("Нет данных для записи");
-        }
-    };
+    // const writeData = () => {
+    //     if (dataInput) {
+    //         localStorage.setItem("test", dataInput);
+    //         alert("Данные записаны");
+    //         setInput('')
+    //     } else {
+    //         alert("Нет данных для записи");
+    //     }
+    // };
 
     return (
         <>

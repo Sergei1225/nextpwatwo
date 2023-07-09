@@ -1,17 +1,19 @@
-"use client"
-import Image from 'next/image'
+"use client";
+import Head from "next/head";
+import Image from "next/image";
 
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 export default function NewPage() {
-  const router = useRouter();
+    const router = useRouter();
 
-  return (
-    <>
-       <h3>New page</h3>
-       <button onClick={() => router.back()}>Back</button>
-    </>
-   
-  )
+    return (
+        <>
+            <Head>
+                <link rel="manifest" href="manifest.json" />
+            </Head>
+            <h3>New page</h3>
+            <button onClick={() => router.back()}>Back</button>
+        </>
+    );
 }
-
